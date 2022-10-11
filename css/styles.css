@@ -12,6 +12,7 @@ body {
   /* margin-left: auto;
   margin-right: auto;
   max-width: 1600px; */
+  min-width: 1200px;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
@@ -208,6 +209,29 @@ img {
 .features-item {
   width: calc((100% - 3 * var(--flex-primal-margin)) / 4);
 }
+.features-item::before {
+  content: "";
+  margin-bottom: var(--flex-primal-margin);
+  height: 120px;
+  display: block;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+.features-item:first-child::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+.features-item:nth-child(2)::before {
+  background-image: url(../images/svg/clock.svg);
+}
+.features-item:nth-child(3)::before {
+  background-image: url(../images/svg/diagram.svg);
+}
+.features-item:nth-child(4)::before {
+  background-image: url(../images/svg/astronaut.svg);
+}
 /* .features-item:not(:last-child) {
   margin-right: 30px;
 }  */
@@ -216,7 +240,8 @@ img {
 .section.works {
   padding-top: 0;
 }
-.works-title {
+.works-title,
+.regular-title {
   margin-bottom: 50px;
 }
 .works-list {
@@ -273,6 +298,26 @@ img {
   margin-right: 30px;
 } */
 
+/* REGULAR */
+
+.regular-list {
+  display: flex;
+  justify-content: space-between;
+}
+.regular-box {
+  padding: 16px 32px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+/* .regular-item {
+
+} */
+.regular-box img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ** Portfolio Main ** */
 
 .examples-button {
@@ -293,6 +338,8 @@ img {
 .examples-button:focus {
   color: var(--background-color);
   background-color: var(--alt-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .examples .title {
   /* padding-left: 24px; */
@@ -303,6 +350,7 @@ img {
 }
 .examples-type {
   /* padding-left: 24px; */
+  color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
 }
@@ -321,6 +369,11 @@ img {
 }
 .button-item:not(:last-child) {
   margin-right: 8px;
+}
+.example-item:hover,
+.example-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples .example-cards {
@@ -352,6 +405,8 @@ img {
 }
 /* ** Footer ** */
 .down {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
