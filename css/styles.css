@@ -19,6 +19,21 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p {
   margin-bottom: 0;
   margin-top: 0;
@@ -544,7 +559,7 @@ section.section {
   background-color: var(--alt-text-color);
 }
 .down .container {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 /* .team-icon:hover,
@@ -553,8 +568,4 @@ section.section {
 } */
 .futer-social .futer-box + .futer-box {
   margin-left: 10px;
-}
-
-.hidden {
-  display: none;
 }
