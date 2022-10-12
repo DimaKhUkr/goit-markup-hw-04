@@ -76,6 +76,7 @@ img {
 }
 
 /* **Header** */
+
 .header {
   font-weight: 500;
   line-height: 1.14;
@@ -155,7 +156,9 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+
 /* ** Main ** */
+
 .section-title,
 .title {
   margin-bottom: 0;
@@ -232,6 +235,7 @@ img {
 }
 
 /* Features */
+
 .features-title {
   margin-bottom: 10px;
   line-height: 1.14;
@@ -289,6 +293,7 @@ img {
 }  */
 
 /* Works */
+
 .section.works {
   padding-top: 0;
 }
@@ -310,7 +315,9 @@ img {
 /* .works-item > img {
   display: block;
 } */
+
 /* Team */
+
 .team {
   background-color: var(--alt-background-color);
 }
@@ -491,7 +498,9 @@ img {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+
 /* ** Footer ** */
+
 .down {
   margin-right: auto;
   margin-left: auto;
